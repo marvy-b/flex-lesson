@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: rgb(31, 31, 34);
+  color: #f4f4f4;
+}
+
+header {
+  background-color: rgb(44, 45, 48);
+}
+
+.brand {
+  border-bottom: 1px solid rgb(71, 71, 71);
+  margin-bottom: 10px;
+}
+
+.brand a,
+.nav-item a {
+  padding: 10px 5px;
+  color: #f4f4f4;
+  display: block;
+  text-decoration: none;
+  transition: all 200ms ease-in;
+}
+
+.brand a:hover,
+.nav-item a:hover {
+  background-color: rgb(33, 33, 36);
+}
+
+.nav-menu .nav-menu-list {
+  list-style: none;
+}
+
+.container {
+  padding: 0 10px;
+}
+
+.jumbo {
+  background-color: rgb(71, 71, 71);
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.jumbo p:first-child {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+.about-box .img-sect {
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.about-box .img-cont {
+  border-radius: 30px;
+  box-shadow: 0px 0px 8px 2px rgba(237, 240, 243, 0.377);
+}
+
+.about-box .status-cont {
+  background-color: rgb(5, 73, 151);
+  width: 100px;
+  height: 100px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  font-size: 1rem;
+  text-align: center;
+  position: absolute;
+  bottom: -4rem;
+  right: 0;
+}
+
+.about-box .status-cont p:nth-child(1) {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.about-box .img-cont img {
+  width: 100%;
+  border-radius: 30px;
+}
+
+@media (min-width: 768px) {
+  nav,
+  .nav-menu-list {
+    display: flex;
+    align-items: center;
+  }
+
+  nav {
+    justify-content: space-between;
+  }
+
+  .brand {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+
+  .brand a,
+  .nav-item a {
+    padding: 20px 15px;
+  }
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .about-box .status-cont {
+    width: 200px;
+    height: 200px;
+    font-size: 1.6rem;
+  }
+
+  .about-box .status-cont p:nth-child(1) {
+    font-size: 1.8rem;
+  }
+}
+
+/* Tablet only */
+@media (max-width: 1024px) and (min-width: 768px) {
+}
+
+/* Large only */
+@media (min-width: 1025px) {
+  nav {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
